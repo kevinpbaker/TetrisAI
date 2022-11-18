@@ -21,3 +21,14 @@ The neural nets are made with [koma](https://github.com/kyonifer/koma) which is 
 
 ## Visuals | Processing 4
 The visuals are created using [Processing](https://processing.org/). A beta version is included in this repo, because the older stable versions do not play nicely with Apple Silicon.
+
+# How To Run On Windows
+- all commands below are to be run the Windows PowerShell
+- make sure you have the [java development kit](https://dev.java/download/) installed on your machine and the [JAVA_HOME](https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/diepm/epm_set_java_home_104x6dd63633_106x6dd6441c.html) enviroment variable set
+- download [Chocolately](https://chocolatey.org/install) (a package manager for Windows)
+- use Chocolately to install Gradle (allows you to build jar files)
+  - run: `choco install gradle`
+- download this repository or run: `git clone https://github.com/kevinpbaker/TetrisAI.git`
+- navigate to downloaded folder in the powershell by running: `cd INSERT_DIRECTORY_PATH_WHERE_YOU_SAVED_REPO_HERE`
+- run: `gradle build`
+- run: `java -jar .\build\libs\TetrisAI-1.0.jar`
