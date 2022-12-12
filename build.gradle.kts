@@ -8,7 +8,6 @@ group = "ca.kevbot"
 version = "1.0"
 
 repositories {
-    jcenter()
     mavenCentral()
 }
 
