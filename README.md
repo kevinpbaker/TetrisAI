@@ -4,11 +4,11 @@ A genetic algorithm that finds a matrix multiplication network capable of playin
 
 https://user-images.githubusercontent.com/48214072/178131757-73f0edd1-7ad9-4ebb-9c0b-347ad0850a5e.mov
 
-This means the first players will fail right away when the program starts.
+<br />This means the first players will fail right away when the program starts.
 
 https://user-images.githubusercontent.com/48214072/178131760-4de5137e-6acb-4949-9608-dc9da5e66d79.mov
 
-This is because the neural nets are initialized with random numbers. Failure causes simulated games and generational breeding to be ran in the background until a player can play the game to the specified score. The simulation and breeding are done using parallel computation, so it is resource heavy and will use nearly 100% of your CPU.
+<br />This is because the neural nets are initialized with random numbers. Failure causes simulated games and generational breeding to be ran in the background until a player can play the game to the specified score. The simulation and breeding are done using parallel computation, so it is resource heavy and will use nearly 100% of your CPU.
 
 ## Generating Players | Crossover
 1) The best player from the last generation is kept and added to the next generation.
@@ -23,7 +23,7 @@ The neural nets are made with [koma](https://github.com/kyonifer/koma) which is 
 The visuals are created using [Processing](https://processing.org/). A beta version is included in this repo, because the older stable versions do not play nicely with Apple Silicon.
 
 ## How To Run On Windows
-- all commands below are to be run the Windows PowerShell
+- run the following commands within Windows PowerShell
 - make sure you have the [java development kit](https://dev.java/download/) installed on your machine and the [JAVA_HOME](https://docs.oracle.com/en/cloud/saas/enterprise-performance-management-common/diepm/epm_set_java_home_104x6dd63633_106x6dd6441c.html) enviroment variable set
 - download [Chocolately](https://chocolatey.org/install) (a package manager for Windows)
 - use Chocolately to install Gradle (allows you to build jar files)
